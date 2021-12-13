@@ -1,0 +1,71 @@
+:root {
+    --primary: purple;
+}
+html {
+    font-size: 62.5%; /*1rem=10px*/
+}
+body {
+    background-color: grayS;
+}
+@media(min-width:768px) {
+    body {
+        background-color: bisque;
+    }
+}
+table,
+td,
+th {
+    border-collapse: collapse;
+    border: 1px solid var(purple
+    );
+}
+th {
+    background-color: var(purple);
+    color: black;
+    width: 500px;
+    text-align: left;
+}
+td,
+th {
+    width: 15rem;
+    text-align: left;
+    height: 5rem;
+    
+}
+td.affected-cell {
+    color: crimson;
+}
+td.effected-cell {
+    text-align: center;
+}
+th.effected-cell {
+    text-align: center;
+    background-color: lightgray;
+}
+/*flex*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;/*related to direction*/
+    align-items: center;
+    height: 200px;
+    flex-wrap: wrap;
+}
+.flex-item {
+    background-color: green;
+    border: 1px solid yellowgreen;
+    padding: 1rem;
+    flex-basis: 30rem;/*width*/
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+}
+.grid-item {
+    background-color: grey;
+    border: 1px solid black;
+    padding: 1rem;
+} 

@@ -1,0 +1,293 @@
+/*global*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi:wght@400;500;600;700&display=swap');
+:root {
+    --primary:#fc0;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+/*ultilites*/
+.read-btn {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+/*Menu*/
+nav {
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img.big-logo {
+    height: 50px;
+    display: none; /*hide the element*/
+}
+img.small-logo {
+    height: 32px;
+    margin-left: 16px;
+}
+.login-item {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: black;
+    margin-right: 20px;
+}
+.menu-item {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: black;
+    margin-right: 30px;
+}
+.search-item {
+    color: black;
+    margin-right: 30px;
+}
+.arrow-item {
+    color: gray;
+    margin-right: 30px;
+    font-weight: 100;
+}
+.renew-item {
+    color: black;
+    font-size: 14px;
+    font-weight: 475;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--primary);
+}
+.renew-item:hover {
+    background-color: var(--primary);
+}
+.subs-item {
+    background-color: black;
+    color: white;
+    padding: 18px;
+    margin-right: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    background: linear-gradient(to left, black 50%, var(--primary) 50%) right;
+    background-size: 200%;
+    transition: .3s ease-out;
+}  
+.subs-item:hover{
+    background-color: var(--primary);
+    color: black;
+    background-position: left;
+}
+.menu-item,
+.renew-item,
+.search-item {
+    display: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    img.big-logo{
+        display:block;
+        font-size: 100px;
+    }
+    img.small-logo {
+        display: none;
+    }
+/*header*/
+.main-header {
+    margin-left:50px;
+    margin-top: 48px;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.main-header-text {
+    font-size: 15px;
+    font-weight: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: none;
+    margin-top: -7px;
+    margin-left: 50px;
+    padding-bottom: 5%;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+span.Subscribe {
+    color: white;
+    border-bottom: 2px solid #fc0;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, black 50%, var(--primary) 50%);
+    transition: .1s ease-in-out, color .1s ease-in-out;
+} 
+span.Subscribe:hover {
+    background-color: var(--primary);
+    color: black;
+    background-position: 0% 100%;
+}
+
+.main-hr {
+    width: 28px;
+    font-weight: 500;
+    height: 2px;
+    background-color: var(--primary);
+    margin-top: -15px;
+    margin-bottom: 50px;
+    
+}
+.Geo {
+    margin-left: 150px;
+}
+@media(min-width:768px) {
+    .menu-item,
+    .renew-item,
+    .search-item {
+    display: inline-block;
+    margin-right: 7px;
+    }
+
+@media(min-width:768px) {
+    .main-header-container {
+        margin-left: 30rem;
+        
+    }
+    .main-header h1 {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+    .main-hr {
+        margin-left: 16rem;
+        width: 4rem;
+    }
+/*Main-news*/
+.main-news-item {
+    position: relative;/*parent*/
+    width: 95%;
+    margin: 10px auto;
+}
+.main-news-text {
+    position: absolute;/*the child*/
+    bottom: 1rem;
+    left: 30px;
+    color: white;
+}
+.main-news-text p {
+    font-size: 35px;
+}
+.main-news-text h3 {
+   color: white;
+} 
+.main-news-read-btn {
+    color: white;
+    margin-top: 50px;
+}
+span.main-news-covid {
+    margin-left: 30px;
+} 
+.secondary-news-item {
+    width: 95%;
+    margin: 10px auto;
+    margin-bottom: 1rem;
+} 
+.secondary-news-item img {
+    height: 400px;
+    width: 100%;
+}
+.secondary-news-text {
+    background-color: white;
+    color: black;
+    margin-top: -14px;
+    height: 150px;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+span.secondary-title {
+    color: grey;
+    font-weight: 300;
+    margin-left: 10px;
+}
+.secondary-news-text .read-btn {
+    color: black;
+}
+.secondary-news-text p {
+    font-size: 20px;
+    font-weight: 700;
+    word-spacing: 5px;
+}
+.todays-picks-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    border-left: 5px solid var(--primary);
+    padding-left: 10px;
+    margin-left: 10px;
+}
+.todays-picks-item {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+.todays-picks-item img {
+    width: 90px;
+    height: 80px;
+    padding-bottom: 7%;
+}
+.todays-picks-text {
+    margin-left: 20px;
+    width: 80%;
+}
+.todays-picks-text p {
+    margin-top: 3px;
+}
+@media (min-width:768px) {
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .main-news-item {
+        width: 40rem;
+    }
+    .main-news-text {
+        padding-top: auto !important;
+        padding-bottom: 1rem !important;
+    }
+    .main-header-text {
+        justify-content: left;
+    }
+    span.Geo {
+        margin: auto;
+    }
+    .secondary-news-item {
+        width: 19rem;
+    }
+    .todays-picks-container{
+        width: 25rem;
+    }
+    .secondary-news-item img {
+        height: 15rem;
+        width: 19rem;
+    }
+    .secondary-news-container {
+        display: flex;
+    }
+    .secondary-news-text {
+        height: 150px;
+    }
+}
